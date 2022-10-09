@@ -1,0 +1,112 @@
+/* Clear default padding and margin */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body CSS */
+body{
+    background-color: #f5f3f3;
+}
+
+/* **************
+* Container CSS
+ ****************/
+.container{
+    padding: 20px 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+ /***************** 
+ * Navigation CSS
+  *****************/
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: #131212;
+    padding: 2px 60px;
+    background-color: #ffffff;
+}
+
+
+
+  /* *************************** 
+  * Content Section CSS
+  *****************************/
+section{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "one one one two"
+        "one one one three"
+        "four five six seven"
+    ;
+}
+
+/* CSS for flex-column applied on the following divs */
+.flex-col{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* CSS for making the divs cards */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
+
+
+.introduction{
+    grid-area: one;
+}
+
+.membership{
+    grid-area: two;
+}
+
+.pro-membership{
+    grid-area: three;
+}
+
+.analysis{
+    grid-area: four;
+}
+
+.marketing{
+    grid-area: five;
+}
+
+.development{
+    grid-area: six;
+}
+
+.support{
+    grid-area: seven;
+}
