@@ -29,15 +29,15 @@ p{
   *****************/
 nav{
     width: 100%;
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 20px;
 }
 
 nav>div{
     text-align: center;
     margin: 10px 0px;
+    padding: 5px 0px;
 }
 
 
@@ -99,7 +99,7 @@ section{
 }
 
 .introduction img{
-    width: 900px;
+    width: 750px;
     height: 350px;
     position: absolute;
     z-index: -1;
@@ -134,4 +134,16 @@ section{
 
 .support{
     grid-area: seven;
+}
+
+
+/* ********************************************************************
+*                   MEDIA QUERIES For Different Screen Sizes
+******************************************************************** */
+@media screen, (min-width:768px) and (max-width:1023){
+
+}
+
+@media screen and (max-width: 767px){
+    
 }
